@@ -1,0 +1,455 @@
+
+@import url("style.css");
+
+* a {
+  color: #000000;
+  font-size: 13px;
+  font-weight: 400;
+  cursor: pointer;
+  -webkit-transition: all 0.3s 0s;
+  -moz-transition: all 0.3s 0s;
+  -ms-transition: all 0.3s 0s;
+  transition: all 0.3s 0s; }
+  * a:focus, * a:hover {
+    text-decoration: none; }
+
+*:focus {
+  outline: none !important; }
+
+p {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #666;
+  margin: 0; }
+ a:hover
+ {
+    color: #0da79e;
+}
+.text
+i {
+  cursor: pointer; }
+
+.card_main {
+  margin-bottom: 30px;
+  border: none;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.05), 0 3px 1px -2px rgba(0, 0, 0, 0.08), 0 1px 5px 0 rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.05), 0 3px 1px -2px rgba(0, 0, 0, 0.08), 0 1px 5px 0 rgba(0, 0, 0, 0.08); }
+
+.sub-title {
+  border-bottom: 1px solid rgba(204, 204, 204, 0.35);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+  margin-bottom: 40px; }
+
+label {
+  color: rgba(43, 61, 81, 0.8);
+  text-transform: capitalize; }
+
+h6 {
+  color: #757575;
+  font-weight: 500; }
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0; }
+
+.slimScrollBar {
+  width: 4px !important; }
+
+.counter-txt {
+  font-size: 1.5rem; }
+
+.width-100 {
+  width: 100%; }
+
+.c-both {
+  clear: both; }
+
+.c-pointer {
+  cursor: pointer; }
+
+.breadcrumb-block .breadcrumb:last-child {
+  margin-bottom: 0; }
+
+.breadcrumb-title {
+  background: transparent none repeat scroll 0 0;
+  padding: 0; }
+
+  .card-header-text {
+    margin-bottom: 0;
+    font-size: 1rem;
+    margin-bottom: rgba(51, 51, 51, 0.85);
+    text-transform: uppercase;
+    font-weight: 550;
+    display: inline-block;
+    vertical-align: middle;
+    color: #000;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #48443dcc;
+}
+.card-header {
+  padding: 20px;
+  background-color: transparent;
+  color: #757575;
+  border-bottom: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+  .card-header p {
+    margin-top: 10px;
+    color: #8e8e8e;
+    font-size: 14px; }
+    .card-header::after {
+      content: "";
+      display: none !important;
+      clear: both;
+  }
+
+
+textarea {
+  resize: none; }
+
+.txt-ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 120px;
+  overflow: hidden; }
+
+.form-inline label {
+  margin-bottom: 5px !important; }
+
+.able-logo {
+  display: inline-block;
+  margin-right: 10px;
+  width: 130px; }
+
+.nav-pills .nav-link.active, .nav-pills .nav-link.active:focus, .nav-pills .nav-link.active:hover {
+  background: transparent;
+  color: #0275d8;
+  text-align: center;
+  box-shadow: 0px 0px 2px 1px #ddd; }
+
+.generic-card-body strong {
+  display: block; }
+.generic-card-body code {
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 10px; }
+
+.block {
+  display: block; }
+
+.btn.shadow-none {
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+/**====== Custom css end ======**/
+/**  =====================
+      icon css start
+==========================  **/
+/*========== font awesome icone ===========*/
+.data_table_main.icon-list-demo [class*=col-] {
+  margin-bottom: 10px; }
+
+.icon-list-demo i {
+  border: 1px solid #eceeef;
+  border-radius: 3px;
+  color: rgba(43, 61, 81, 0.7);
+  display: inline-block;
+  font-size: 24px;
+  height: 50px;
+  line-height: 50px;
+  margin: 0 12px 0 0;
+  text-align: center;
+  vertical-align: middle;
+  width: 50px; }
+  .icon-list-demo i:hover {
+    color: #64b0f2; }
+.icon-list-demo div {
+  cursor: pointer;
+  white-space: nowrap;
+  margin-bottom: 10px; }
+
+.main-header {
+  padding: 20px 0 20px 12px; }
+  .main-header h4 {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 500; }
+  .main-header .breadcrumb-title {
+    margin-top: 10px;
+    margin-bottom: 0; }
+    .main-header .breadcrumb-title a {
+      font-size: 15px;
+      color: #7e7e7e;
+  }
+    .main-header .breadcrumb-title .breadcrumb-item:last-child a {
+      color: #7e7e7e; }
+
+
+.row-table {
+  display: table;
+  height: 100%;
+  width: 100%; }
+  .row-table > [class*=col-] {
+    display: table-cell;
+    table-layout: fixed;
+    vertical-align: middle; }
+    .row-table > [class*=col-]:first-child {
+      border-right: 1px solid #fff; }
+
+#system-clock {
+  opacity: 0.6; }
+
+.b-t-none {
+  border-top: none;
+  border: 1px solid #ccc; }
+
+.side-box {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 50px;
+  width: 60px;
+  color: #fff;
+  font-size: 26px;
+  border-radius: 0 0 0 100px;
+  text-align: center; }
+  .side-box i {
+    position: relative;
+    top: 10px;
+    left: 5px; }
+
+.resource-barchart canvas {
+  width: 60% !important; }
+
+.dashboard-facebook,
+.dashboard-primary,
+.dashboard-success,
+.dashboard-warning,
+.weather-temp h6 {
+  color: #fff; }
+
+
+.dashboard-product {
+  background-color: #fff;
+  color: #777;
+  padding: 15px; }
+
+  .dashboard-total-products {
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 23px;
+    color: #000;
+}
+.dashboard-resource .counter {
+  color: #fff;
+  display: inline-block; }
+.dashboard-resource .resource-used {
+  text-align: right;
+  color: #fff;
+  float: right; }
+
+.dashboard-city {
+  display: inline-block; }
+
+
+/* home chat css start */
+.showChat {
+  display: none;
+  margin-top: -50px;
+  z-index: 999; }
+
+.showChat_inner {
+  position: fixed;
+  top: 50px;
+  background-color: #fff;
+  right: 0;
+  display: none;
+  width: 300px;
+  height: 100%;
+  z-index: 999; }
+
+/* home chat css end */
+.income-per-day p {
+  line-height: 1.6em;
+  text-align: left; }
+.income-per-day h6 {
+  display: inline-block;
+  color: #666;
+  font-style: italic; }
+  .income-per-day h6:first-child {
+    margin-right: 20px; }
+
+.fixed-button {
+  position: fixed;
+  bottom: -50px;
+  right: 30px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.35);
+  opacity: 0;
+  transition: all 0.5s ease; }
+
+.fixed-button.active {
+  bottom: 50px;
+  opacity: 1; }
+
+/* === color css starts=== */
+.color-1 {
+  background: #1b8bf9; }
+
+.color-2 {
+  background: #f57c00; }
+
+.color-3 {
+  background: #ff5252; }
+
+.color-4 {
+  background: #8B4DA5; }
+
+.color-5 {
+  background: #40c4ff; }
+
+.color-inverse {
+  background: #000; }
+  .color-inverse img {
+    -webkit-box-shadow: 0px 0px 10px 1px rgba(129, 129, 129, 0.27);
+    box-shadow: 0px 0px 10px 1px rgba(129, 129, 129, 0.27); }
+
+.color-picker {
+  position: fixed;
+  right: 0;
+  top: 150px;
+  width: 239px;
+  background: #fff;
+  z-index: 999999;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+  .color-picker a.handle {
+    border: 1px solid #0e7ae8;
+    border-right-color: transperant;
+    border-left-color: none;
+    position: absolute;
+    top: 0;
+    right: 239px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    background: #fff;
+    z-index: 9999;
+    -webkit-transition: all ease-in 0.3s;
+    -moz-transition: all ease-in 0.3s;
+    -ms-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s; }
+    .color-picker a.handle:hover {
+      background: #1b8bf9;
+      -webkit-transition: all ease-in 0.3s;
+      -moz-transition: all ease-in 0.3s;
+      -ms-transition: all ease-in 0.3s;
+      transition: all ease-in 0.3s; }
+      .color-picker a.handle:hover i {
+        color: #fff;
+        -webkit-transition: all ease-in 0.3s;
+        -moz-transition: all ease-in 0.3s;
+        -ms-transition: all ease-in 0.3s;
+        transition: all ease-in 0.3s; }
+    .color-picker a.handle i {
+      color: #1b8bf9;
+      font-size: 25px;
+      line-height: 50px; }
+  .color-picker .settings-header {
+    background: #1b8bf9;
+    height: 50px;
+    padding: 15px 34px 0 34px; }
+    .color-picker .settings-header h3 {
+      color: #fff;
+      font-size: 16px;
+      line-height: 16px;
+      margin-bottom: 0;
+      padding: 0 0 5px;
+      margin-top: 0; }
+  .color-picker .section {
+    padding: 20px 20px;
+    border-bottom: 1px dotted rgba(14, 122, 232, 0.55);
+    border-left: 1px solid rgba(14, 122, 232, 0.55);
+    overflow: hidden; }
+    .color-picker .section:last-child {
+      border-bottom: 1px solid rgba(14, 122, 232, 0.55); }
+    .color-picker .section h3 {
+      font-size: 16px;
+      text-transform: none;
+      color: #3c3c3c;
+      line-height: 16px;
+      padding: 0;
+      margin-bottom: 20px;
+      text-align: left; }
+    .color-picker .section i {
+      font-size: 16px;
+      margin-right: 10px; }
+  .color-picker span {
+    font-size: 13px;
+    color: #9a9a9a; }
+  .color-picker .colors a {
+    display: block;
+    border-radius: 10px;
+    width: 30px;
+    height: 30px;
+    margin-left: 0;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    float: left;
+    -webkit-transition: all ease-in 0.3s;
+    -moz-transition: all ease-in 0.3s;
+    -ms-transition: all ease-in 0.3s;
+    transition: all ease-in 0.3s; }
+    .color-picker .colors a:hover {
+      -webkit-box-shadow: 0 0 2px 1px rgba(247, 54, 121, 0.58);
+      box-shadow: 0 0 2px 1px rgba(247, 54, 121, 0.58);
+      -webkit-transition: all ease-in 0.3s;
+      -moz-transition: all ease-in 0.3s;
+      -ms-transition: all ease-in 0.3s;
+      transition: all ease-in 0.3s; }
+  .color-picker .skin a {
+    display: block;
+    width: 70px;
+    height: 30px;
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 5px;
+    float: left;
+    text-align: center;
+    line-height: 30px;
+    border: 2px transparent solid; }
+    .color-picker .skin a.actt {
+      border: 2px #FFF solid; }
+
+/* color css Ends */
+
+/* Sidebar collapse logic */
+.wrapper.sidebar-collapsed .main-sidebar {
+  width: 60px !important;   /* or 0px if you want hidden */
+  min-width: 60px !important;
+  overflow: hidden;
+}
+
+.wrapper.sidebar-collapsed .main-sidebar .sidebar-menu span,
+.wrapper.sidebar-collapsed .main-sidebar .sidebar-menu .pull-right-container {
+  display: none !important;
+}
+.wrapper.sidebar-collapsed .main-sidebar .sidebar-menu i {
+  font-size: 20px;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+.wrapper.sidebar-collapsed .main-panel {
+  margin-left: 60px !important;
+}

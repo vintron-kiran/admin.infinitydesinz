@@ -1,0 +1,23 @@
+.react-colorful {
+  width: 100%;
+  max-width: 250px;
+  aspect-ratio: 1 / 1;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.react-colorful__saturation {
+  border-radius: 8px 8px 0 0;
+}
+.react-colorful__hue,
+.react-colorful__alpha {
+  height: 16px;
+}
+.react-colorful__hue-pointer,
+.react-colorful__alpha-pointer,
+.react-colorful__saturation-pointer {
+  width: 20px;
+  height: 20px;
+  border: 2px solid white;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px #00000033;
+}

@@ -1,0 +1,117 @@
+/* Global CSS overrides if needed */
+
+.main-sidebar.collapsed .sidebar-menu span {
+  display: none;
+}
+
+.main-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background: #0da79e;
+  padding-top: 90px; /* adjust if header is taller */
+  z-index: 810;
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 270px;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+
+
+/* When collapsed */
+.main-sidebar.collapsed {
+  width: 60px !important;
+  overflow: hidden;
+}
+
+/* Main content should respect sidebar width */
+.layout-content {
+  transition: margin-left 0.3s ease;
+}
+
+.layout-content.shifted {
+  margin-left: 250px;
+}
+
+.layout-content.collapsed {
+  margin-left: 60px;
+}
+
+  /* Shared Styles */
+        .form-label {
+            font-weight: 600;
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+
+
+        .submit-btn {
+            background-color: #00b2b2;
+            color: #fff;
+            font-size: 18px;
+            padding: 8px 30px;
+            border: none;
+            border-radius: 6px;
+        }
+
+        .submit-btn:hover {
+            background-color: #009999;
+        }
+
+        /* Styles for first two image boxes */
+        .choose-file-box {
+            border: 2px solid #00b2b2;
+            border-radius: 8px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 25px;
+        }
+
+        .choose-file-box img {
+            width: 200px;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        /* Separate style for third (full-width) image box */
+        .choose-file-box-full {
+            border: 2px solid #00b2b2;
+            border-radius: 8px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 25px;
+        }
+
+        .choose-file-box-full img {
+            flex-shrink: 0;
+            width: 100%;
+            height: 115px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 768px) {
+
+            .choose-file-box,
+            .choose-file-box-full {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .image-input {
+                width: 100%;
+            }
+        }
