@@ -35,7 +35,7 @@ export default function Slider() {
                     </div>
                     <div className="col-md-3">
                       <select className="form-control">
-                        <option value>- Select Status -</option>
+                    <option value="">- Select Status -</option>
                         <option value="active">Active</option>
                         <option value="inactive">In Active</option>
                       </select>

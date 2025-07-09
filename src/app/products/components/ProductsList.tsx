@@ -29,8 +29,8 @@ export default function ProductsList({ onEdit }: ProductsListProps) {
 
   const handleSelectAll = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.checked) {
-      const allIds = filteredProducts.map((p) => p.id);
-      setSelectedIds(allIds);
+     const allIds = filteredProducts.map((p) => p.id).filter((id): id is number => typeof id === 'number');
+setSelectedIds(allIds);
     } else {
       setSelectedIds([]);
     }
@@ -137,12 +137,13 @@ export default function ProductsList({ onEdit }: ProductsListProps) {
         </thead>
         <tbody>
           {filteredProducts.map((product) => (
+            
             <tr key={product.id}>
               <td>
                 <input
                   type="checkbox"
-                  checked={selectedIds.includes(product.id)}
-                  onChange={() => handleSelect(product.id)}
+                  checked={selectedIds.includes(product.id!)}
+                  onChange={() => handleSelect(product.id!)}
                 />
               </td>
               <td>{product.id}</td>
@@ -158,7 +159,7 @@ export default function ProductsList({ onEdit }: ProductsListProps) {
               </td>
               <td>
                 <button className={styles.editBtn} onClick={() => onEdit(String(product.id))}>✏️</button>
-                <button className={styles.deleteBtn} onClick={() => handleDelete(product.id)}>🗑️</button>
+                <button className={styles.deleteBtn} onClick={() => handleDelete(product.id!)}>🗑️</button>
               </td>
             </tr>
           ))}
